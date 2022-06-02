@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+h1{
+   text-align: center;
+}
+div {
+  text-align: left;
+  color: #37DC94;
+  width: 600px;
+  height: 120px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+#div1 {
+  background-color: red;
+}
+#div2 {
+  background-color: orange;
+}
+#div3 {
+  background-color: yellow;
+}
+#div4 {
+  background-color: blue;
+}
+#div5 {
+  background-color: purple;
+}
+</style>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+
+<h1>Tier List</h1>
+<p>Faça o Ranking dos países do mundo</p>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">S</div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">A</div>
+<div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">B</div>
+<div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)">C</div>
+<div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)">F</div>
+<br>
+<img id="drag1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/125px-Flag_of_Brazil.svg.png" draggable="true" ondragstart="drag(event)" width="65" height="50">
+<img id="drag2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/1200px-Flag_of_Argentina.svg.png" draggable="true" ondragstart="drag(event)" width="65" height="50">
+<img id="drag3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/255px-Flag_of_the_United_Kingdom_%283-5%29.svg.png" draggable="true" ondragstart="drag(event)" width="65" height="50">
+<img id="drag4" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/255px-Flag_of_Germany.svg.png" draggable="true" ondragstart="drag(event)" width="65" height="50">
+<img id="drag5" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/125px-Flag_of_South_Africa.svg.png" draggable="true" ondragstart="drag(event)" width="65" height="50">
+<img id="drag6" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/125px-Flag_of_Canada_%28Pantone%29.svg.png" draggable="true" ondragstart="drag(event)" width="65" height="50">
+<img id="drag7" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png" draggable="true" ondragstart="drag(event)" width="65" height="50">
+<img id="drag8" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/125px-Flag_of_Mexico.svg.png" draggable="true" ondragstart="drag(event)" width="65" height="50">
+<img id="drag9" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Japan.svg/125px-Flag_of_Japan.svg.png" draggable="true" ondragstart="drag(event)" width="65" height="50">
+<img id="drag10" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/125px-Flag_of_the_People%27s_Republic_of_China.svg.png" draggable="true" ondragstart="drag(event)" width="65" height="50">
+<img id="drag11" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_South_Korea.svg/125px-Flag_of_South_Korea.svg.png" draggable="true" ondragstart="drag(event)" width="65" height="50">
+<img id="drag12" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_India.svg/125px-Flag_of_India.svg.png" draggable="true" ondragstart="drag(event)" width="65" height="50">
+<img id="drag13" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/125px-Flag_of_Indonesia.svg.png" draggable="true" ondragstart="drag(event)" width="65" height="50">
+<img id="drag14" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/125px-Flag_of_Portugal.svg.png" draggable="true" ondragstart="drag(event)" width="65" height="50">
+<img id="drag15" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/125px-Flag_of_Germany.svg.png" draggable="true" ondragstart="drag(event)" width="65" height="50">
+<img id="drag16" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/125px-Flag_of_Spain.svg.png" draggable="true" ondragstart="drag(event)" width="65" height="50">
+<img id="drag17" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg/125px-Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg.png" draggable="true" ondragstart="drag(event)" width="65" height="50">
+<img id="drag18" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/125px-Flag_of_Italy.svg.png" draggable="true" ondragstart="drag(event)" width="65" height="50">
+<img id="drag19" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/125px-Flag_of_Russia.svg.png" draggable="true" ondragstart="drag(event)" width="65" height="50">
+<img id="drag20" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/125px-Flag_of_Australia_%28converted%29.svg.png" draggable="true" ondragstart="drag(event)" width="65" height="50">
+
+</body>
+</html>
+
+
+
+
+
+
+
